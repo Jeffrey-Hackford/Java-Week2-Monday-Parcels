@@ -69,15 +69,8 @@ public class Parcel {
 
   public double costOfShipping() {
     double dimensionalWeight = (mLength * mWidth * mHeight) / 166.0;
-    //double
     double intCost = mWeight - dimensionalWeight;
-    // String strCost = Integer.toString(intCost);
-    // float shippingCost = intCost;
     return Math.round(intCost*100.0)/100.0;
   }
-
-  // public boolean isSquare() {
-  //   return mLength == mWidth;
-  // }
   // end business logic
 }
